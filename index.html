@@ -3,83 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name - Portfolio</title>
+<title>Sneha Das - Portfolio</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<style>body{font-family:'Inter',sans-serif}</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Poppins',sans-serif;background:#0b1026;color:white;overflow-x:hidden}
+.glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)}
+.skill-bar{background:linear-gradient(90deg,#60a5fa,#a78bfa)}
+</style>
 </head>
-<body class="bg-[#0a0a0a] text-white">
-
-<!-- Navbar -->
-<nav class="flex justify-between items-center px-6 md:px-20 py-6 border-b border-zinc-800">
-  <h1 class="font-bold text-xl">YN<span class="text-zinc-500">.dev</span></h1>
-  <div class="flex gap-6 text-sm text-zinc-400">
-    <a href="#projects" class="hover:text-white">Projects</a>
+<body>
+<nav class="fixed top-0 w-full z-50 glass px-6 md:px-16 py-4 flex justify-between items-center">
+  <h1 class="font-bold text-[#7c8cff]">Sneha Das</h1>
+  <div class="hidden md:flex gap-6 text-xs text-zinc-400">
+    <a href="#home" class="hover:text-white">Home</a>
+    <a href="#about" class="hover:text-white">About</a>
     <a href="#skills" class="hover:text-white">Skills</a>
+    <a href="#projects" class="hover:text-white">Projects</a>
+    <a href="#education" class="hover:text-white">Education</a>
+    <a href="#certificates" class="hover:text-white">Certificates</a>
     <a href="#contact" class="hover:text-white">Contact</a>
   </div>
 </nav>
-
-<!-- Hero -->
-<section class="px-6 md:px-20 py-20 md:py-32">
-  <p class="text-zinc-500 mb-4">Available for new opportunities</p>
-  <h2 class="text-5xl md:text-7xl font-extrabold leading-[1.1]">Hi, I'm <span class="text-zinc-500">Your Name</span><br>Full Stack Developer</h2>
-  <p class="text-zinc-400 mt-6 max-w-2xl text-lg">I build fast, modern websites and apps. Currently learning DSA in C++ and building projects.</p>
-  <div class="flex gap-4 mt-8">
-    <a href="#projects" class="bg-white text-black px-6 py-3 rounded-full font-semibold">View Projects</a>
-    <a href="YOUR_RESUME_LINK" class="border border-zinc-700 px-6 py-3 rounded-full">Resume</a>
+<section id="home" class="pt-28 px-6 md:px-16 flex flex-col md:flex-row gap-10 items-center">
+  <div class="flex-1">
+    <p class="text-[10px] tracking-[0.3em] text-zinc-500 mb-3">WELCOME TO MY PORTFOLIO</p>
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight">Hi, I'm <br><span class="text-[#7c8cff]">Sneha Das</span></h1>
+    <p class="text-[#7c8cff] mt-2 text-sm" id="role">React.js Specialist</p>
+    <p class="text-zinc-400 text-xs mt-4 leading-relaxed max-w-xl">
+      <!-- EDIT HERE - YOUR BIO -->
+      Aspiring Cybersecurity Analyst with a keen interest in ethical hacking and digital security. Currently learning network security and vulnerability assessment to build a strong foundation in cyber defense.
+    </p>
+    <div class="flex gap-3 mt-6">
+      <a href="#contact" class="bg-[#7c8cff] text-xs px-5 py-2 rounded-full">Get In Touch</a>
+      <a href="#projects" class="glass text-xs px-5 py-2 rounded-full">View Projects</a>
+      <a href="#" class="glass text-xs px-5 py-2 rounded-full">Download CV</a>
+    </div>
+    <div class="flex gap-2 mt-6">
+      <span class="glass text-[9px] px-3 py-1 rounded-full">✓ Clean Architecture</span>
+      <span class="glass text-[9px] px-3 py-1 rounded-full">✓ High Performance</span>
+      <span class="glass text-[9px] px-3 py-1 rounded-full">✓ Innovation</span>
+      <span class="glass text-[9px] px-3 py-1 rounded-full">✓ Dedication</span>
+    </div>
   </div>
-</section>
 
-<!-- Projects -->
-<section id="projects" class="px-6 md:px-20 py-16 bg-[#111]">
-  <h3 class="text-3xl font-bold mb-10">Selected Projects</h3>
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl">
-      <h4 class="font-bold text-xl">Project 1</h4>
-      <p class="text-zinc-400 text-sm mt-2">E-commerce website built with React & Node.js</p>
-      <div class="flex gap-2 mt-4"><span class="bg-zinc-800 text-xs px-2 py-1 rounded">React</span><span class="bg-zinc-800 text-xs px-2 py-1 rounded">Node</span></div>
-      <a href="#" class="text-sm mt-4 inline-block underline">Live Demo →</a>
-    </div>
-    <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl">
-      <h4 class="font-bold text-xl">Project 2</h4>
-      <p class="text-zinc-400 text-sm mt-2">Employee Management System in C++</p>
-      <div class="flex gap-2 mt-4"><span class="bg-zinc-800 text-xs px-2 py-1 rounded">C++</span><span class="bg-zinc-800 text-xs px-2 py-1 rounded">DSA</span></div>
-      <a href="#" class="text-sm mt-4 inline-block underline">GitHub →</a>
-    </div>
-    <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl">
-      <h4 class="font-bold text-xl">Project 3</h4>
-      <p class="text-zinc-400 text-sm mt-2">Weather App using API</p>
-      <div class="flex gap-2 mt-4"><span class="bg-zinc-800 text-xs px-2 py-1 rounded">API</span><span class="bg-zinc-800 text-xs px-2 py-1 rounded">JS</span></div>
-      <a href="#" class="text-sm mt-4 inline-block underline">Live Demo →</a>
+  <div class="glass rounded-2xl p-6 w-[280px] text-center">
+    <img src="https://via.placeholder.com/150" class="w-24 h-24 rounded-full mx-auto border-2 border-[#7c8cff]" alt="Sneha">
+    <h3 class="font-bold mt-4 text-sm">Sneha Das</h3>
+    <p class="text-[10px] text-zinc-400 mt-1">Aspiring Cybersecurity Analyst</p>
+    <div class="flex flex-wrap gap-1 justify-center mt-3">
+      <span class="bg-zinc-800 text-[8px] px-2 py-1 rounded">React</span>
+      <span class="bg-zinc-800 text-[8px] px-2 py-1 rounded">Node.js</span>
+      <span class="bg-zinc-800 text-[8px] px-2 py-1 rounded">MERN</span>
     </div>
   </div>
 </section>
 
-<!-- Skills -->
-<section id="skills" class="px-6 md:px-20 py-16">
-  <h3 class="text-3xl font-bold mb-6">Skills</h3>
-  <div class="flex flex-wrap gap-3">
-    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">HTML</span>
-    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">CSS / Tailwind</span>
-    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">JavaScript</span>
-    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">React</span>
-    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">C++</span>
-    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">Git / GitHub</span>
+<!-- ABOUT ME -->
+<section id="about" class="px-6 md:px-16 mt-24">
+  <h2 class="text-center font-bold text-xl">About Me</h2>
+  <p class="text-center text-[10px] text-zinc-500">Get to know more about who I am and what I do</p>
+  <div class="glass rounded-xl p-6 mt-6">
+    <h3 class="font-semibold text-sm">Hello! I'm Sneha Das</h3>
+    <p class="text-xs text-zinc-400 mt-3 leading-relaxed">
+      I'm an aspiring Cybersecurity Analyst with expertise in modern web technologies. I love creating innovative solutions that solve real-world problems and deliver exceptional user experiences. With a strong foundation in both frontend and backend development, I specialize in MERN stack and building scalable web applications.
+    </p>
   </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="px-6 md:px-20 py-16 bg-[#111] text-center">
-  <h3 class="text-4xl font-bold">Let's Work Together</h3>
-  <p class="text-zinc-400 mt-3">your.email@gmail.com</p>
-  <div class="flex justify-center gap-4 mt-6">
-    <a href="https://github.com/yourusername" class="bg-white text-black px-6 py-2 rounded-full">GitHub</a>
-    <a href="https://linkedin.com/in/yourusername" class="border border-zinc-700 px-6 py-2 rounded-full">LinkedIn</a>
+<section id="skills" class="px-6 md:px-16 mt-20">
+  <h2 class="text-center font-bold text-xl">Skills & Technologies</h2>
+  <p class="text-center text-[10px] text-zinc-500">Technologies I work with to bring ideas to life</p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+    <!-- COPY THIS CARD FOR EACH SKILL -->
+    <div class="glass rounded-xl p-5">
+      <div class="flex justify-between items-center"><span class="text-xs">Python</span><span class="text-[10px]">⚛️</span></div>
+      <div class="w-full bg-zinc-800 h-1 rounded mt-3"><div class="skill-bar h-1 rounded w-[90%]"></div></div>
+      <p class="text-[9px] text-zinc-500 mt-1">90%</p>
+    </div>
+    <div class="glass rounded-xl p-5"><div class="flex justify-between"><span class="text-xs">Python</span>🟢</div><div class="w-full bg-zinc-800 h-1 rounded mt-3"><div class="skill-bar h-1 rounded w-[85%]"></div></div><p class="text-[9px] text-zinc-500 mt-1">85%</p></div>
+    <div class="glass rounded-xl p-5"><div class="flex justify-between"><span class="text-xs">JavaScript</span>JS</div><div class="w-full bg-zinc-800 h-1 rounded mt-3"><div class="skill-bar h-1 rounded w-[90%]"></div></div><p class="text-[9px] text-zinc-500 mt-1">90%</p></div>
+    <div class="glass rounded-xl p-5"><span class="text-xs">HTML5</span><div class="w-full bg-zinc-800 h-1 rounded mt-3"><div class="bg-orange-400 h-1 rounded w-[95%]"></div></div><p class="text-[9px] text-zinc-500 mt-1">95%</p></div>
+    <div class="glass rounded-xl p-5"><span class="text-xs">CSS</span><div class="w-full bg-zinc-800 h-1 rounded mt-3"><div class="bg-blue-400 h-1 rounded w-[90%]"></div></div><p class="text-[9px] text-zinc-500 mt-1">90%</p></div>
+    <div class="glass rounded-xl p-5"><span class="text-xs">C</span><div class="w-full bg-zinc-800 h-1 rounded mt-3"><div class="bg-green-400 h-1 rounded w-[80%]"></div></div><p class="text-[9px] text-zinc-500 mt-1">80%</p></div>
+   
+  </div>
+</section>
+<section id="projects" class="px-6 md:px-16 mt-20">
+  <h2 class="text-center font-bold text-xl">Featured Projects</h2>
+  <p class="text-center text-[10px] text-zinc-500">Some of the projects I've worked on recently</p>
+  <div class="grid md:grid-cols-2 gap-6 mt-8">
+    <div class="glass rounded-xl overflow-hidden">
+      <img src="https://via.placeholder.com/400x200" class="w-full">
+      <div class="p-5"><h4 class="font-bold text-sm">Startup Ecosystem Tracker</h4><p class="text-[11px] text-zinc-400 mt-2">A comprehensive platform for tracking and analyzing startup ecosystem.</p><div class="flex gap-2 mt-3"><span class="bg-zinc-800 text-[8px] px-2 py-1 rounded">React</span><span class="bg-zinc-800 text-[8px] px-2 py-1 rounded">Node.js</span></div></div>
+    </div>
+    <div class="glass rounded-xl overflow-hidden"><img src="https://via.placeholder.com/400x200"><div class="p-5"><h4 class="font-bold text-sm">Pet Care Service Platform</h4><p class="text-[11px] text-zinc-400 mt-2">Full-featured pet care service application connecting pet owners.</p></div></div>
+    <!-- EDIT PROJECT 3,4 HERE -->
   </div>
 </section>
 
-<footer class="text-center text-zinc-600 py-6 text-sm">© 2026 Your Name. Built with HTML & Tailwind.</footer>
+<!-- EDUCATION -->
+<section id="education" class="px-6 md:px-16 mt-20">
+  <h2 class="text-center font-bold text-xl">Education & Certifications</h2>
+  <div class="grid md:grid-cols-2 gap-6 mt-8">
+    <div class="glass rounded-xl p-5"><h4 class="text-sm font-bold">Bachelor of Technology</h4><p class="text-[11px] text-zinc-400">Computer Science and Engineering - Lovely Professional University</p></div>
+    <div class="glass rounded-xl p-5"><h4 class="text-sm font-bold">Cybersecurity Analyst</h4><p class="text-[11px] text-zinc-400">Certification - EDIT HERE</p></div>
+  </div>
+</section>
 
+
+<section id="contact" class="px-6 md:px-16 mt-20 pb-10">
+  <h2 class="text-center font-bold text-xl">Get In Touch</h2>
+  <p class="text-center text-[10px] text-zinc-500">Let's discuss your next project or just say hello</p>
+  <div class="grid md:grid-cols-2 gap-6 mt-8">
+    <div>
+      <h4 class="font-bold text-sm">Let's Connect</h4>
+      <div class="glass rounded-xl p-4 mt-4 space-y-3 text-xs">
+        <p>📧 Email: dasneha8727@email.com</p>
+        <p>📞 Phone: +91-9339876853</p>
+        <p>📍 Location: India</p>
+      </div>
+    </div>
+    <div class="glass rounded-xl p-5">
+      <input placeholder="Your Name" class="w-full bg-zinc-900 border border-zinc-800 rounded p-2 text-xs mb-3">
+      <input placeholder="Your Email" class="w-full bg-zinc-900 border border-zinc-800 rounded p-2 text-xs mb-3">
+      <textarea placeholder="Your Message" class="w-full bg-zinc-900 border border-zinc-800 rounded p-2 text-xs h-20"></textarea>
+      <button class="bg-[#7c8cff] w-full mt-3 py-2 rounded text-xs">Send Message</button>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center text-[10px] text-zinc-600 py-6 border-t border-zinc-900">© 2026 Sneha Das - Built with ❤️</footer>
+
+<script>
+// Role changing animation same as video
+const roles = ["Python Specialist","Backend Developer","Cybersecurity Analyst"];
+let i=0; setInterval(()=>{document.getElementById('role').innerText=roles[i]; i=(i+1)%roles.length},2000);
+</script>
 </body>
 </html>
