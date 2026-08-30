@@ -1,506 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sneha Das | Portfolio</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Inter;
-            background: #f5f7fb;
-            color: #000;
-            line-height: 1.6;
-        }
-
-        /* Navigation */
-        nav {
-            background: #111827;
-            color: white;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav h2 {
-            font-size: 24px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #60a5fa;
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #111827, #1e3a8a);
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 55px;
-            margin-bottom: 10px;
-        }
-
-        .hero h2 {
-            font-size: 28px;
-            color: #93c5fd;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            max-width: 700px;
-            margin: auto;
-            font-size: 18px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #1d4ed8;
-            transform: translateY(-2px);
-        }
-
-        /* Sections */
-        section {
-            padding: 70px 8%;
-        }
-
-        section h2 {
-            text-align: center;
-            font-size: 35px;
-            margin-bottom: 40px;
-            color: #111827;
-        }
-
-        /* About */
-        .about {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        /* Skills */
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .skill-card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-8px);
-        }
-
-        .skill-card h3 {
-            color: #2563eb;
-            margin-bottom: 10px;
-        }
-
-        /* Projects */
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .project-card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
-
-        .project-card h3 {
-            color: #1e3a8a;
-            margin-bottom: 12px;
-        }
-
-        .project-card a {
-            display: inline-block;
-            margin-top: 15px;
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Education */
-        .education {
-            background: #eaf0f8;
-        }
-
-        .education-box {
-            max-width: 700px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-left: 5px solid #2563eb;
-            border-radius: 8px;
-        }
-
-        /* Contact */
-        .contact {
-            text-align: center;
-        }
-
-        .contact p {
-            margin: 10px;
-            font-size: 18px;
-        }
-
-        .contact a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-
-        /* Footer */
-        footer {
-            background: #111827;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Mobile */
-        @media (max-width: 700px) {
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            nav ul {
-                gap: 12px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            .hero h2 {
-                font-size: 22px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name - Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}</style>
 </head>
+<body class="bg-[#0a0a0a] text-white">
 
-<body>
+<!-- Navbar -->
+<nav class="flex justify-between items-center px-6 md:px-20 py-6 border-b border-zinc-800">
+  <h1 class="font-bold text-xl">YN<span class="text-zinc-500">.dev</span></h1>
+  <div class="flex gap-6 text-sm text-zinc-400">
+    <a href="#projects" class="hover:text-white">Projects</a>
+    <a href="#skills" class="hover:text-white">Skills</a>
+    <a href="#contact" class="hover:text-white">Contact</a>
+  </div>
+</nav>
 
-    <!-- Navigation -->
-    <nav>
-        <h2>Sneha Das</h2>
+<!-- Hero -->
+<section class="px-6 md:px-20 py-20 md:py-32">
+  <p class="text-zinc-500 mb-4">Available for new opportunities</p>
+  <h2 class="text-5xl md:text-7xl font-extrabold leading-[1.1]">Hi, I'm <span class="text-zinc-500">Your Name</span><br>Full Stack Developer</h2>
+  <p class="text-zinc-400 mt-6 max-w-2xl text-lg">I build fast, modern websites and apps. Currently learning DSA in C++ and building projects.</p>
+  <div class="flex gap-4 mt-8">
+    <a href="#projects" class="bg-white text-black px-6 py-3 rounded-full font-semibold">View Projects</a>
+    <a href="YOUR_RESUME_LINK" class="border border-zinc-700 px-6 py-3 rounded-full">Resume</a>
+  </div>
+</section>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Projects -->
+<section id="projects" class="px-6 md:px-20 py-16 bg-[#111]">
+  <h3 class="text-3xl font-bold mb-10">Selected Projects</h3>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl">
+      <h4 class="font-bold text-xl">Project 1</h4>
+      <p class="text-zinc-400 text-sm mt-2">E-commerce website built with React & Node.js</p>
+      <div class="flex gap-2 mt-4"><span class="bg-zinc-800 text-xs px-2 py-1 rounded">React</span><span class="bg-zinc-800 text-xs px-2 py-1 rounded">Node</span></div>
+      <a href="#" class="text-sm mt-4 inline-block underline">Live Demo →</a>
+    </div>
+    <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl">
+      <h4 class="font-bold text-xl">Project 2</h4>
+      <p class="text-zinc-400 text-sm mt-2">Employee Management System in C++</p>
+      <div class="flex gap-2 mt-4"><span class="bg-zinc-800 text-xs px-2 py-1 rounded">C++</span><span class="bg-zinc-800 text-xs px-2 py-1 rounded">DSA</span></div>
+      <a href="#" class="text-sm mt-4 inline-block underline">GitHub →</a>
+    </div>
+    <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl">
+      <h4 class="font-bold text-xl">Project 3</h4>
+      <p class="text-zinc-400 text-sm mt-2">Weather App using API</p>
+      <div class="flex gap-2 mt-4"><span class="bg-zinc-800 text-xs px-2 py-1 rounded">API</span><span class="bg-zinc-800 text-xs px-2 py-1 rounded">JS</span></div>
+      <a href="#" class="text-sm mt-4 inline-block underline">Live Demo →</a>
+    </div>
+  </div>
+</section>
 
+<!-- Skills -->
+<section id="skills" class="px-6 md:px-20 py-16">
+  <h3 class="text-3xl font-bold mb-6">Skills</h3>
+  <div class="flex flex-wrap gap-3">
+    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">HTML</span>
+    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">CSS / Tailwind</span>
+    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">JavaScript</span>
+    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">React</span>
+    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">C++</span>
+    <span class="border border-zinc-800 px-4 py-2 rounded-full text-sm">Git / GitHub</span>
+  </div>
+</section>
 
-    <!-- Home -->
-    <section class="hero" id="home">
-        <div>
-            <h1>Hi, I'm Sneha Das</h1>
+<!-- Contact -->
+<section id="contact" class="px-6 md:px-20 py-16 bg-[#111] text-center">
+  <h3 class="text-4xl font-bold">Let's Work Together</h3>
+  <p class="text-zinc-400 mt-3">your.email@gmail.com</p>
+  <div class="flex justify-center gap-4 mt-6">
+    <a href="https://github.com/yourusername" class="bg-white text-black px-6 py-2 rounded-full">GitHub</a>
+    <a href="https://linkedin.com/in/yourusername" class="border border-zinc-700 px-6 py-2 rounded-full">LinkedIn</a>
+  </div>
+</section>
 
-            <h2>B.Tech Student | Cybersecurity Enthusiast</h2>
-
-            <p>
-                I'm a B.Tech student passionate about cybersecurity,
-                programming and technology. I enjoy understanding how
-                systems communicate and learning how to keep them safe.
-            </p>
-
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
-
-
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-
-        <div class="about">
-            <p>
-                I am a B.Tech student with a growing interest in
-                cybersecurity, programming, networking and software
-                development. My technical journey includes Python, C,
-                HTML, CSS, JavaScript and DBMS.
-            </p>
-
-            <br>
-
-            <p>
-                I am particularly interested in cybersecurity because
-                I don't just want to understand how systems work —
-                I want to learn how to protect them, secure data and
-                make digital environments safer.
-            </p>
-        </div>
-    </section>
-
-
-    <!-- Skills -->
-    <section id="skills">
-        <h2>My Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <h3>Cybersecurity</h3>
-                <p>
-                    Interested in system security, network security,
-                    vulnerabilities and protecting digital systems.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Python</h3>
-                <p>
-                    Building programs and developing problem-solving
-                    skills using Python.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <h3>C Programming</h3>
-                <p>
-                    Strong foundation in programming, functions,
-                    arrays, recursion and DSA basics.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Web Development</h3>
-                <p>
-                    HTML, CSS and JavaScript for creating responsive
-                    and interactive websites.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <h3>DBMS</h3>
-                <p>
-                    Understanding databases, SQL and fundamental
-                    database management concepts.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Networking</h3>
-                <p>
-                    Learning how devices communicate and how data
-                    moves across networks.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Linux & OS</h3>
-                <p>
-                    Exploring Linux, operating systems and
-                    system-level concepts.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Communication</h3>
-                <p>
-                    Effective communication, teamwork and
-                    collaborative problem solving.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Projects -->
-    <section id="projects">
-        <h2>My Projects</h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-                <h3>Optical Fiber Project</h3>
-
-                <p>
-                    A technical project exploring losses associated
-                    with optical fiber, including attenuation,
-                    Rayleigh scattering, Mie scattering, bending
-                    losses and methods to minimize losses.
-                </p>
-
-                <a href="#" target="_blank">
-                    View Project →
-                </a>
-            </div>
-
-
-            <div class="project-card">
-                <h3>DSA in C++</h3>
-
-                <p>
-                    Practicing fundamental data structures and
-                    algorithms including sorting, searching,
-                    recursion and array-based problems.
-                </p>
-
-                <a href="#" target="_blank">
-                    View Repository →
-                </a>
-            </div>
-
-
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-
-                <p>
-                    A responsive personal portfolio website created
-                    using HTML and CSS to showcase my skills,
-                    projects and academic journey.
-                </p>
-
-                <a href="#" target="_blank">
-                    View Repository →
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Education -->
-    <section class="education" id="education">
-        <h2>Education</h2>
-
-        <div class="education-box">
-  <h3>Bachelor of Technology (B.Tech)</h3>
-  <p>
-    <strong>College:</strong> Lovely Professional University<br>
-    <strong>Year:</strong> 2025<br>
-    <strong>CGPA:</strong> 9.04
-  </p>
-  <p>
-    Currently pursuing B.Tech with an interest in
-    Cybersecurity, Programming, Networking and
-    Computer Science.
-  </p>
-  <br>
-  <p>
-    <strong>Focus Areas:</strong>
-    Cybersecurity | Programming | Networking |
-    DBMS | Operating Systems | Web Development
-  </p>
-</div>
-
-<div class="education-box">
-  <h3>Class 12 - CBSE</h3>
-  <p>
-    <strong>School:</strong>Kendriya Vidyalaya No 2 AFS Kalaikunda<br>
-    <strong>Year:</strong> 2022-23<br>
-    <strong>Percentage:</strong> 87.6
-  </p>
-</div>
-
-<div class="education-box">
-  <h3>Class 10 - CBSE</h3>
-  <p>
-    <strong>School:</strong> Kendriya Vidyalaya No 2 AFS Kalaikunda<br>
-    <strong>Year:</strong> 2024-25<br>
-    <strong>Percentage:</strong> 92.6
-  </p>
-</div>
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-
-        <div class="contact">
-
-            <p>
-                📧 Email:
-                <a href="mailto:dasneha8727@gmail.com">
-  
-                </a>
-            </p>
-
-            <p>
-                💻 GitHub:
-                <a href="https://github.com/Sneha-Das24" target="_blank">
-                    
-                </a>
-            </p>
-
-            <p>
-                🔗 LinkedIn:
-                <a href="https://www.linkedin.com/sneha-das-b7b468384/" target="_blank">
-                    LinkedIn Profile
-                </a>
-            </p>
-
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-        <p>
-            © 2026 Sneha Das | Built with HTML & CSS
-        </p>
-    </footer>
+<footer class="text-center text-zinc-600 py-6 text-sm">© 2026 Your Name. Built with HTML & Tailwind.</footer>
 
 </body>
 </html>
