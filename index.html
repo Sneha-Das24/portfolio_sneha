@@ -51,7 +51,7 @@ a.bg-white\/10, button {
     <a href="#contact" class="hover:text-white">Contact</a>
   </div>
 </nav>
-<section id="home" class="pt-28 px-6 md:px-16 flex flex-col md:flex-row gap-10 items-center">
+<section id="home" class="pt-24 pb-10 px-6 md:px-16 flex flex-col md:flex-row gap-10 items-center">
   <div class="flex-1">
     <p class="text-[10px] tracking-[0.3em] text-zinc-500 mb-3">WELCOME TO MY PORTFOLIO</p>
     <h1 class="text-4xl md:text-5xl font-bold leading-tight">Hi, I'm <br><span class="text-[#fff8e7]">Sneha Das</span></h1>
@@ -83,7 +83,7 @@ a.bg-white\/10, button {
 </section>
 
 <!-- ABOUT ME -->
-<section id="about" class="px-6 md:px-16 mt-24">
+<section id="about" class="px-6 md:px-16 mt-8 max-w-[1100px] mx-auto">
   <h3 class="text-center font-bold text-xl">About Me</h3>
   <p class="text-center text-[10px] text-zinc-500">Get to know more about who I am and what I do</p>
   <div class="glass rounded-xl p-6 mt-6">
@@ -293,32 +293,29 @@ a.bg-white\/10, button {
   </div>
 
 </div>
-<section id="contact" style="max-width:1100px; margin:80px auto 0 auto; padding:0 24px 80px 24px; overflow:hidden;">
-  <h2 style="text-align:center; font-size:32px; font-weight:bold;">Get In Touch</h2>
-  <p style="text-align:center; font-size:14px; color:#999; margin-top:8px;">Let's discuss your next project or just say hello</p>
-  
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:40px; width:100%;">
-    <!-- LEFT -->
+<!-- CONTACT - FIXED -->
+<section id="contact" class="px-6 md:px-16 mt-10 max-w-[1100px] mx-auto pb-10">
+  <h2 class="text-center text-3xl font-bold">Get In Touch</h2>
+  <p class="text-center text-sm text-gray-400 mt-2">Let's discuss your next project or just say hello</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-full">
     <div>
-      <h4 style="font-weight:bold; font-size:14px; margin-bottom:12px;">Let's Connect</h4>
-      <div style="background:#18181b; border:1px solid #27272a; border-radius:12px; padding:20px; width:100%;">
-        <p style="margin-bottom:8px;">📧 Email: dasneha8727@email.com</p>
-        <p style="margin-bottom:8px;">📞 Phone: +91-9339876853</p>
-        <p>📍 Location: India</p>
+      <h4 class="font-bold text-sm mb-4">Let's Connect</h4>
+      <div class="bg-[#18181b] border border-zinc-800 rounded-xl p-6">
+        <p class="text-sm mb-3">📧 Email: dasneha8727@email.com</p>
+        <p class="text-sm mb-3">📞 Phone: +91-9339876853</p>
+        <p class="text-sm">📍 Location: India</p>
       </div>
     </div>
-    <!-- RIGHT -->
-    <div style="background:#18181b; border:1px solid #27272a; border-radius:12px; padding:20px; width:100%;">
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
-        <input placeholder="Your Name" style="width:100%; background:#27272a; border:1px solid #3f3f46; border-radius:6px; padding:10px; font-size:12px; color:white;">
-        <input placeholder="Your Email" style="width:100%; background:#27272a; border:1px solid #3f3f46; border-radius:6px; padding:10px; font-size:12px; color:white;">
+    <div class="bg-[#18181b] border border-zinc-800 rounded-xl p-5">
+      <div class="grid grid-cols-2 gap-3 mb-3">
+        <input placeholder="Your Name" class="w-full bg-zinc-900 border border-zinc-800 rounded p-3 text-xs text-white">
+        <input placeholder="Your Email" class="w-full bg-zinc-900 border border-zinc-800 rounded p-3 text-xs text-white">
       </div>
-      <textarea placeholder="Your Message" style="width:100%; background:#27272a; border:1px solid #3f3f46; border-radius:6px; padding:10px; font-size:12px; height:96px; color:white; margin-bottom:12px;"></textarea>
-      <button type="submit" style="width:100%; padding:12px; border-radius:8px; font-size:14px; font-weight:bold; background:#be123c; color:white; border:none; cursor:pointer;">Send Message</button>
+      <textarea placeholder="Your Message" class="w-full bg-zinc-900 border border-zinc-800 rounded p-3 text-xs h-24 mb-3 text-white"></textarea>
+      <button class="w-full py-3 rounded-lg text-[14px] font-bold bg-[#be123c] text-white">Send Message</button>
     </div>
   </div>
 </section>
-
 <footer class="text-center text-[10px] text-zinc-600 py-6 border-t border-zinc-900">© 2026 Sneha Das - Built with ❤️</footer>
 
 <script>
