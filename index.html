@@ -8,24 +8,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 <style>
-body{font-family:'Poppins',sans-serif;background:#0b1026;color:white;overflow-x:hidden}
+body{font-family:'Poppins',sans-serif;background:#06110e;color:white;overflow-x:hidden}
 .glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)}
-.skill-bar{background:linear-gradient(90deg,#60a5fa,#a78bfa)}
- .skills-container {
+.skill-bar{background:linear-gradient(90deg,#10b981,#34d399)}
+.text-accent{color:#10b981}
+.border-accent{border-color:#10b981}
+.bg-accent{background:#10b981}
+
+.skills-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
   margin-top: 30px;
 }
-
 .skills-row {
   display: flex;
   justify-content: center;
   gap: 18px;
   flex-wrap: wrap;
 }
-
 .skill-card {
   width: 115px;
   height: 115px;
@@ -37,21 +39,9 @@ body{font-family:'Poppins',sans-serif;background:#0b1026;color:white;overflow-x:
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px;
 }
-
-.skill-card img {
-  width: 45px !important;
-  height: 45px !important;
-  object-fit: contain;
-}
-
-.skill-card span {
-  color: white;
-  font-size: 13px;
-  font-weight: 500;
-  text-align: center;
-}
+.skill-card:hover{border-color:#10b981; transform: translateY(-3px);}
+.skill-card img{width:45px;height:45px;object-fit:contain;}
 </style>
 </head>
 <body>
