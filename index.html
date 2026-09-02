@@ -8,19 +8,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 <style>
-body{font-family:'Poppins',sans-serif;background:#160a0e;color:white;overflow-x:hidden}
-.glass{background:rgba(255,255,255,0.06);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.12);border-radius:14px}
-.skill-bar{background:linear-gradient(90deg,#be123c,#fbbf24)}
-.text-accent{color:#fbbf24}
-.text-wine{color:#be123c}
-.bg-wine{background:#be123c}
-.bg-gold{background:#fbbf24}
-.border-wine{border-color:#be123c}
-.skills-container{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:24px}
-.skills-row{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
-.skill-card{width:110px;height:110px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.15);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;transition:0.3s}
-.skill-card:hover{border-color:#fbbf24;transform:translateY(-4px);box-shadow:0 10px 20px rgba(190,18,60,0.3)}
+body {
+  background: #1c0f0f !important; /* Dark Brown + Burgundy */
+  background: radial-gradient(circle at top, #2b1515 0%, #1c0f0f 50%, #140a0a 100%) !important;
+  color: white;
+}
+/* All blue text to GOLDEN */
+.text-blue-400, .text-blue-500, .text-blue-300, .text-\[\#3b82f6\] {
+  color: #fbbf24 !important; /* Golden */
+}
+/* All blue background buttons to Burgundy + Golden */
+.bg-blue-500, .bg-blue-600, .bg-\[\#3b82f6\] {
+  background: linear-gradient(90deg, #7f1d1d, #be123c) !important;
+  color: white !important;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(251, 191, 36, 0.15) !important;
+}
+/* Name Sneha Das golden */
+h1 span, .text-gradient {
+  color: #fbbf24 !important;
+  background: none !important;
+}
+/* Buttons */
+a.bg-white\/10, button {
+  border-color: rgba(251,191,36,0.3) !important;
+}
 </style>
+  
 </head>
 <body>
 <nav class="fixed top-0 w-full z-50 glass px-6 md:px-16 py-4 flex justify-between items-center">
@@ -38,21 +54,21 @@ body{font-family:'Poppins',sans-serif;background:#160a0e;color:white;overflow-x:
 <section id="home" class="pt-28 px-6 md:px-16 flex flex-col md:flex-row gap-10 items-center">
   <div class="flex-1">
     <p class="text-[10px] tracking-[0.3em] text-zinc-500 mb-3">WELCOME TO MY PORTFOLIO</p>
-    <h1 class="text-4xl md:text-5xl font-bold leading-tight">Hi, I'm <br><span class="text-[#7c8cff]">Sneha Das</span></h1>
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight">Hi, I'm <br><span class="text-[#fbbf24]">Sneha Das</span></h1>
     <p class="text-[#7c8cff] mt-2 text-sm" id="role">React.js Specialist</p>
     <p class="text-zinc-400 text-xs mt-4 leading-relaxed max-w-xl">
       <!-- EDIT HERE - YOUR BIO -->
       Aspiring Cybersecurity Analyst with a keen interest in ethical hacking and digital security. Currently learning network security and vulnerability assessment to build a strong foundation in cyber defense.
     </p>
     <div class="flex gap-3 mt-6">
-      <a href="#contact" class="bg-[#7c8cff] text-xs px-5 py-2 rounded-full">Get In Touch</a>
+      <a href="#contact" class="bg-[#be123c] text-xs px-5 py-2 rounded-full">Get In Touch</a>
       <a href="#projects" class="glass text-xs px-5 py-2 rounded-full">View Projects</a>
       <a href="#" class="glass text-xs px-5 py-2 rounded-full">Download CV</a>
     </div>
   </div>
 
   <div class="glass rounded-2xl p-6 w-[280px] text-center">
-    <img src="https://via.placeholder.com/150" class="w-24 h-24 rounded-full mx-auto border-2 border-[#7c8cff]" alt="Sneha">
+    <img src="https://via.placeholder.com/150" class="w-24 h-24 rounded-full mx-auto border-2 border-[#fbbf24]" alt="Sneha">
     <h5 class="font-bold mt-4 text-sm">Sneha Das</h5>
     <p class="text-[10px] text-zinc-400 mt-1">Aspiring Cybersecurity Analyst</p>
     <div class="flex flex-wrap gap-1 justify-center mt-3">
@@ -74,49 +90,52 @@ body{font-family:'Poppins',sans-serif;background:#160a0e;color:white;overflow-x:
     </p>
   </div>
 </section>
-<!-- ====== UPDATED TECHNICAL SKILLS - 7 Skills ====== -->
-  <!-- TECHNICAL SKILLS SECTION -->
-<section id="tech-skills" class="mt-16">
+
+  <!-- FIXED TECHNICAL SKILLS - No Overlapping -->
+<section id="tech-skills" class="mt-16 px-4">
 <h2 class="text-center font-bold text-2xl">Technical Skills</h2>
 <p class="text-center text-zinc-500 text-xs mt-1">What I know</p>
 
-<!-- Skills Section -->
-<div class="skills-container">
-  <div class="skills-row top-row">
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-      <span>Python</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
-      <span>SQL</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/4492/4492311.png" alt="DBMS" style="width:50px;">
-      <span>DBMS</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
-      <span>C</span>
-    </div>
+<div class="grid grid-cols-3 md:grid-cols-4 gap-4 mt-8 max-w-[500px] mx-auto">
+
+  <div class="glass p-4 flex flex-col items-center justify-center gap-2">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-10 h-10">
+    <p class="text-[11px]">Python</p>
   </div>
 
-  <div class="skills-row bottom-row">
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-      <span>HTML</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-      <span>CSS</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
-      <span>JavaScript</span>
-    </div>
+  <div class="glass p-4 flex flex-col items-center justify-center gap-2">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-10 h-10">
+    <p class="text-[11px]">SQL</p>
   </div>
+
+  <div class="glass p-4 flex flex-col items-center justify-center gap-2">
+    <div class="w-10 h-10 bg-[#00618a] rounded flex items-center justify-center text-[10px] font-bold">DBMS</div>
+    <p class="text-[11px]">DBMS</p>
+  </div>
+
+  <div class="glass p-4 flex flex-col items-center justify-center gap-2">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="w-10 h-10">
+    <p class="text-[11px]">C</p>
+  </div>
+
+  <div class="glass p-4 flex flex-col items-center justify-center gap-2">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-10 h-10">
+    <p class="text-[11px]">HTML</p>
+  </div>
+
+  <div class="glass p-4 flex flex-col items-center justify-center gap-2">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-10 h-10">
+    <p class="text-[11px]">CSS</p>
+  </div>
+
+  <div class="glass p-4 flex flex-col items-center justify-center gap-2">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-10 h-10">
+    <p class="text-[11px]">JavaScript</p>
+  </div>
+
 </div>
 </section>
+  
   <!-- FEATURED PROJECTS - 2 PROJECTS -->
 <section id="projects" class="mt-20">
 <h2 class="text-center font-bold text-2xl">Featured Projects</h2>
