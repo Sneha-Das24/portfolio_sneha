@@ -268,7 +268,7 @@ a.bg-white\/10, button {
 
     <!-- CERTIFICATE 2 -->
     <div class="glass rounded-xl overflow-hidden hover:scale-[1.02] transition">
-      <img src="./cert2.png" alt="Python Certificate" class="w-full h-[200px] object-cover">
+      <img src="./Cert2.png" alt="Python Certificate" class="w-full h-[200px] object-cover">
       <div class="p-4">
         <h4 class="font-bold text-sm">Introduction to Python</h4>
         <p class="text-[12px] text-[#22c55e] mt-1">Saylor Academy</p>
@@ -282,7 +282,7 @@ a.bg-white\/10, button {
   <!-- Bottom row - 1 centered -->
   <div class="flex justify-center">
     <div class="w-full md:w-[48%] glass rounded-xl overflow-hidden hover:scale-[1.02] transition">
-      <img src="cyber.png" alt="Cybersecurity Certificate" class="w-full h-[200px] object-cover">
+      <img src="./cyber.png" alt="Cybersecurity Certificate" class="w-full h-[200px] object-cover">
       <div class="p-4">
         <h4 class="font-bold text-sm">Foundations of cybersecurity</h4>
         <p class="text-[12px] text-[#22c55e] mt-1">Coursera / Google</p>
@@ -294,25 +294,33 @@ a.bg-white\/10, button {
 
 </div>
 <!-- CONTACT - FIXED -->
-<section id="contact" class="px-6 md:px-16 mt-10 max-w-[1100px] mx-auto pb-10">
-  <h2 class="text-center text-3xl font-bold">Get In Touch</h2>
-  <p class="text-center text-sm text-gray-400 mt-2">Let's discuss your next project or just say hello</p>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-full">
+<!-- CONTACT - FINAL FIXED -->
+<section id="contact" style="max-width:1100px; margin:40px auto 0 auto; padding:0 64px 40px 64px;">
+  <h2 style="text-align:center; font-size:32px; font-weight:bold;">Get In Touch</h2>
+  <p style="text-align:center; font-size:14px; color:#999; margin-top:8px;">Let's discuss your next project or just say hello</p>
+  
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-top:32px;">
+    <!-- LEFT -->
     <div>
-      <h4 class="font-bold text-sm mb-4">Let's Connect</h4>
-      <div class="bg-[#18181b] border border-zinc-800 rounded-xl p-6">
-        <p class="text-sm mb-3">📧 Email: dasneha8727@email.com</p>
-        <p class="text-sm mb-3">📞 Phone: +91-9339876853</p>
-        <p class="text-sm">📍 Location: India</p>
+      <h4 style="font-weight:bold; font-size:14px; margin-bottom:16px;">Let's Connect</h4>
+      <div style="background:#18181b; border:1px solid #27272a; border-radius:12px; padding:24px;">
+        <p style="font-size:14px; margin-bottom:12px;">📧 Email: dasneha8727@email.com</p>
+        <p style="font-size:14px; margin-bottom:12px;">📞 Phone: +91-9339876853</p>
+        <p style="font-size:14px;">📍 Location: India</p>
       </div>
     </div>
-    <div class="bg-[#18181b] border border-zinc-800 rounded-xl p-5">
-      <div class="grid grid-cols-2 gap-3 mb-3">
-        <input placeholder="Your Name" class="w-full bg-zinc-900 border border-zinc-800 rounded p-3 text-xs text-white">
-        <input placeholder="Your Email" class="w-full bg-zinc-900 border border-zinc-800 rounded p-3 text-xs text-white">
+    <!-- RIGHT - FORM - LOCKED -->
+    <div style="background:#18181b; border:1px solid #27272a; border-radius:12px; padding:20px; display:flex; flex-direction:column; overflow:hidden;">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+        <input placeholder="Your Name" style="width:100%; background:#27272a; border:1px solid #3f3f46; border-radius:6px; padding:12px; font-size:12px; color:white; box-sizing:border-box;">
+        <input placeholder="Your Email" style="width:100%; background:#27272a; border:1px solid #3f3f46; border-radius:6px; padding:12px; font-size:12px; color:white; box-sizing:border-box;">
       </div>
-      <textarea placeholder="Your Message" class="w-full bg-zinc-900 border border-zinc-800 rounded p-3 text-xs h-24 mb-3 text-white"></textarea>
-      <button class="w-full py-3 rounded-lg text-[14px] font-bold bg-[#be123c] text-white">Send Message</button>
+      <textarea placeholder="Your Message" style="width:100%; background:#27272a; border:1px solid #3f3f46; border-radius:6px; padding:12px; font-size:12px; height:90px; color:white; margin-bottom:16px; box-sizing:border-box; resize:none;"></textarea>
+      
+      <!-- BUTTON - NOW LOCKED INSIDE -->
+      <div style="width:100%; overflow:hidden; border-radius:8px;">
+        <button type="submit" style="width:100%; padding:12px; border-radius:8px; font-size:14px; font-weight:bold; background:#be123c; color:white; border:none; display:block; cursor:pointer;">Send Message</button>
+      </div>
     </div>
   </div>
 </section>
